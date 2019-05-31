@@ -8,9 +8,9 @@
 
 `vue-env-config` is available on [npm](http://npmjs.org) or [yarn](https://yarnpkg.com).
 
-    $ npm install vue-env-config
+    $ npm install vue-env-config --save-dev
 
-    $ yarn add vue-env-config
+    $ yarn add vue-env-config --dev
 
 ## Usage
 
