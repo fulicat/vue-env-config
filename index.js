@@ -5,8 +5,8 @@
  * @Author: Jack.Chan (fulicat@qq.com)
  * @Date:   2019-05-31 11:32:20
  * @Last Modified by:   Jack.Chan
- * @Last Modified time: 2019-05-31 14:28:06
- * @version v1.0.4
+ * @Last Modified time: 2019-05-31 14:48:16
+ * @version v1.0.5
  */
 
 /*!
@@ -42,7 +42,12 @@ var exports = module.exports = VUE_ENV_CONFIG;
 */
 function VUE_ENV_CONFIG (options = {}) {
 	options = Object.assign({}, {config: './env.config.js', debug: false, log: false, dist: './dist'}, options);
-	let ENV_CONFIG_LIST = require(options.config);
+	const path = require('path');
+	if (options.debug) {
+		console.log('process.cwd():'+ process.cwd());
+		console.log('options.config:'+ path.resolve(options.config));
+	};
+	let ENV_CONFIG_LIST = require(path.resolve(options.config));
 	let argv = process.argv.slice(2, process.argv.length);
 	let env = {ENV_CONFIG: 'development'};
 	if (argv.length) {
