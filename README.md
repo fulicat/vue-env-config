@@ -6,9 +6,11 @@
 
 ### Node.js
 
-`vue-env-config` is available on [npm](http://npmjs.org).
+`vue-env-config` is available on [npm](http://npmjs.org) or [yarn](https://yarnpkg.com).
 
     $ npm install vue-env-config
+
+    $ yarn add vue-env-config
 
 ## Usage
 

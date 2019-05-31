@@ -3,8 +3,8 @@
 * @Author: Jack.Chan (971546@qq.com)
 * @Date:   2019-05-31 11:41:33
 * @Last Modified by:   Jack.Chan
-* @Last Modified time: 2019-05-31 13:36:13
-* @version v1.0.1
+* @Last Modified time: 2019-05-31 13:46:23
+* @version v1.0.2
 */
 
 module.exports = {
