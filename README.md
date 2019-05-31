@@ -16,7 +16,35 @@
 
 ### Primary
 
-#### 1. modify vue.config.js file like this:
+#### 1. add env.config.js file:
+
+```js
+module.exports = {
+  development: {
+    publicPath: '/',
+    variables: {
+      api_baseURL: '//daily.fulicat.com/api',
+      api_timeout: 5000
+    }
+  },
+  daily: {
+    publicPath: '//cdn.fulicat.com/fulicat/dashboard/daily/dist/',
+    variables: {
+      api_baseURL: '//daily.fulicat.com/api',
+      api_timeout: 30000
+    }
+  },
+  production: {
+    publicPath: '//cdn.fulicat.com/fulicat/dashboard/master/dist/',
+    variables: {
+      api_baseURL: '//www.fulicat.com/api',
+      api_timeout: 30000
+    }
+  }
+}
+```
+
+#### 2. modify vue.config.js file like this:
 
 ```js
 const ENV = require('./env.config')();
@@ -27,7 +55,7 @@ module.exports = {
 }
 ```
 
-#### 2. modify package.json file like this ( add command in scripts or manual execute ):
+#### 3. modify package.json file like this ( add command in scripts or manual execute ):
 
 ```js
   "dev-daily": "vue-cli-service serve --open --ENV_CONFIG=daily",

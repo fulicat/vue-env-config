@@ -1,6 +1,6 @@
 {
   "name": "vue-env-config",
-  "version": "1.0.2",
+  "version": "1.0.3",
   "description": "Easy to configure development environment for Vue CLI 3",
   "main": "index.js",
   "scripts": {
