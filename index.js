@@ -5,8 +5,8 @@
  * @Author: Jack.Chan (fulicat@qq.com)
  * @Date:   2019-05-31 11:32:20
  * @Last Modified by:   Jack.Chan
- * @Last Modified time: 2019-05-31 14:48:16
- * @version v1.0.5
+ * @Last Modified time: 2019-05-31 16:34:50
+ * @version v1.0.6
  */
 
 /*!
@@ -22,7 +22,7 @@ var exports = module.exports = VUE_ENV_CONFIG;
 * Usage:
 * 1. modify vue.config.js file like this:
 * 
-* const ENV = require('./env.config')();
+* const ENV = require('vue-env-config')();
 * 
 * module.exports = {
 * 	// options...

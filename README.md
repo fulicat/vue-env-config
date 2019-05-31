@@ -47,7 +47,7 @@ module.exports = {
 #### 2. modify vue.config.js file like this:
 
 ```js
-const ENV = require('./env.config')();
+const ENV = require('vue-env-config')();
 
 module.exports = {
 	// options...
@@ -71,7 +71,7 @@ module.exports = {
 #### arguments
 
 ```js
-const ENV = require('./env.config')({
+const ENV = require('vue-env-config')({
 	config: './env.config.js',
 	debug: false,
 	log: false,
