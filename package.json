@@ -1,0 +1,24 @@
+{
+  "name": "vue-env-config",
+  "version": "1.0.0",
+  "description": "Easy to configure development environment for Vue CLI 3",
+  "main": "index.js",
+  "scripts": {
+    "test": "node test --ENV_CONFIG=development",
+    "test2": "node test --ENV_CONFIG=daily",
+    "test3": "node test --ENV_CONFIG=production"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/fulicat/vue-env-config.git"
+  },
+  "keywords": [
+    "vue-env-config"
+  ],
+  "author": "fulicat",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/fulicat/vue-env-config/issues"
+  },
+  "homepage": "https://github.com/fulicat/vue-env-config#readme"
+}
